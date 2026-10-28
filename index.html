@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ADA ZIONSTAR | Electrical Products & Solutions</title>
+
+<meta name="description" content="Explore electrical products, lighting, cables, solar products and electrical appliances at ADA ZIONSTAR. Contact us for product enquiries.">
+
+<style>
+:root {
+  --black: #090909;
+  --dark: #141414;
+  --gold: #d4af37;
+  --gold-light: #f3dc8a;
+  --white: #ffffff;
+  --grey: #b8b8b8;
+  --border: rgba(212, 175, 55, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+  background: rgba(9, 9, 9, 0.96);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 17px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.logo-star {
+  color: var(--gold);
+  font-size: 43px;
+  line-height: 1;
+  text-shadow: 0 0 18px rgba(212, 175, 55, 0.35);
+}
+
+.logo-name {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.logo-name span {
+  color: var(--gold);
+}
+
+.logo-caption {
+  color: var(--grey);
+  font-size: 9px;
+  letter-spacing: 3px;
+  margin-top: 2px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 13px;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.nav-cta {
+  padding: 11px 16px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+}
+
+/* HERO SECTION */
+
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  min-height: 510px;
+  padding: 85px 24px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 45px;
+}
+
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1.08;
+  letter-spacing: -2px;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero-description {
+  color: var(--grey);
+  max-width: 520px;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.primary-button {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--black);
+  padding: 15px 24px;
+  font-weight: bold;
+  border: 1px solid var(--gold);
+  transition: 0.25s;
+}
+
+.primary-button:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+}
+
+.secondary-button {
+  display: inline-block;
+  border: 1px solid var(--border);
+  padding: 15px 24px;
+  margin-left: 10px;
+  transition: 0.25s;
+}
+
+.secondary-button:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.hero-visual {
+  min-height: 320px;
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(212, 175, 55, 0.17),
+      transparent 65%
+    ),
+    linear-gradient(145deg, #1d1b15, #0b0b0b 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-visual::before,
+.hero-visual::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  transform: rotate(45deg);
+}
+
+.hero-visual::after {
+  width: 170px;
+  height: 170px;
+}
+
+.hero-emblem {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-emblem .star {
+  display: block;
+  color: var(--gold);
+  font-size: 130px;
+  line-height: 1.2;
+  text-shadow: 0 0 45px rgba(212, 175, 55, 0.25);
+}
+
+.hero-emblem p {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+.hero-emblem small {
+  color: var(--gold-light);
+  letter-spacing: 5px;
+  font-size: 10px;
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+  padding: 75px 24px;
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-heading {
+  margin-bottom: 35px;
+}
+
+.section-heading h2 {
+  font-size: clamp(28px, 4vw, 42px);
+  margin-bottom: 9px;
+}
+
+.section-heading h2 span {
+  color: var(--gold);
+}
+
+.section-heading p {
+  color: var(--grey);
+  max-width: 620px;
+}
+
+.categories-section {
+  background: #111111;
+  border-top: 1px solid #252525;
+  border-bottom: 1px solid #252525;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.category-card {
+  display: block;
+  background: #181818;
+  border: 1px solid #303030;
+  padding: 25px 18px;
+  min-height: 175px;
+  text-align: left;
+  color: var(--white);
+  transition: 0.25s;
+}
+
+.category-card:hover,
+.category-card.active {
+  border-color: var(--gold);
+  background: #211d12;
+  transform: translateY(-3px);
+}
+
+.category-icon {
+  display: block;
+  font-size: 34px;
+  margin-bottom: 17px;
+}
+
+.category-card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.category-card p {
+  color: var(--grey);
+  font-size: 12px;
+}
+
+/* CATALOGUE */
+
+.catalogue-section {
+  background: var(--black);
+}
+
+.catalogue-controls {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.catalogue-controls input,
+.catalogue-controls select {
+  width: 100%;
+  padding: 14px;
+  color: var(--white);
+  background: #181818;
+  border: 1px solid #383838;
+  outline: none;
+  border-radius: 2px;
+}
+
+.catalogue-controls input:focus,
+.catalogue-controls select:focus {
+  border-color: var(--gold);
+}
+
+.catalogue-controls select option {
+  background: #181818;
+}
+
+.catalogue-status {
+  color: var(--grey);
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.product-card {
+  background: #151515;
+  border: 1px solid #292929;
+  transition: 0.25s;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.product-art {
+  min-height: 190px;
+  background:
+    radial-gradient(circle, #28251b, #151515 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.product-symbol {
+  font-size: 65px;
+  filter: drop-shadow(0 5px 12px rgba(0, 0, 0, 0.4));
+}
+
+.sample-label {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: var(--gold-light);
+  background: #090909;
+  border: 1px solid var(--border);
+  padding: 4px 8px;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-category {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.product-info h3 {
+  margin: 8px 0;
+  font-size: 19px;
+}
+
+.product-meta {
+  color: var(--grey);
+  font-size: 13px;
+  margin-bottom: 17px;
+}
+
+.enquiry-button {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  background: transparent;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.enquiry-button:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  padding: 45px 20px;
+  text-align: center;
+  border: 1px dashed #383838;
+  color: var(--grey);
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+  background: #111111;
+  border-top: 1px solid #252525;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.about-panel {
+  padding: 35px;
+  border: 1px solid var(--border);
+  background: linear-gradient(145deg, #201d14, #101010);
+}
+
+.about-panel .star {
+  color: var(--gold);
+  font-size: 75px;
+}
+
+.about-panel h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.about-panel p,
+.about-copy p {
+  color: var(--grey);
+  margin-bottom: 16px;
+}
+
+.about-copy h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-copy h2 span {
+  color: var(--gold);
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-section .section-heading p {
+  margin: auto;
+}
+
+.contact-box {
+  border: 1px solid var(--border);
+  background: #141414;
+  padding: 38px 20px;
+  margin-top: 28px;
+}
+
+.contact-box h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.contact-box p {
+  color: var(--grey);
+  margin-bottom: 23px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #050505;
+  border-top: 1px solid var(--border);
+  padding: 35px 24px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-brand {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.footer-brand span {
+  color: var(--gold);
+}
+
+.footer-inner p {
+  color: var(--grey);
+  font-size: 12px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 850px) {
+  .nav-links {
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 0.8fr;
+    gap: 20px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalogue-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .catalogue-controls input {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 14px 16px;
+  }
+
+  .logo-star {
+    font-size: 35px;
+  }
+
+  .logo-name {
+    font-size: 17px;
+  }
+
+  .logo-caption {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-links a:not(.nav-cta) {
+  display: inline-block;
+  font-size: 11px;
+  }
+
+  .nav-cta {
+    padding: 9px 10px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 65px 20px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero-visual {
+    min-height: 245px;
+  }
+
+  .hero-emblem .star {
+    font-size: 95px;
+  }
+
+  .section {
+    padding: 55px 18px;
+  }
+
+  .category-grid {
+    gap: 10px;
+  }
+
+  .category-card {
+    padding: 18px 13px;
+    min-height: 155px;
+  }
+
+  .category-card h3 {
+    font-size: 14px;
+  }
+
+  .catalogue-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .catalogue-controls input {
+    grid-column: auto;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-art {
+    min-height: 220px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .about-panel {
+    padding: 25px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .secondary-button {
+    margin: 12px 0 0;
+  }
+}
+.product-art {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+/* ADA ZIONSTAR product catalogue improvements */
+
+.product-card {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.product-art {
+  min-height: 200px;
+  background: #ffffff;
+}
+
+.product-image {
+  height: 200px;
+  object-fit: contain;
+}
+
+.product-info {
+  padding: 16px;
+}
+
+.product-category {
+  color: #d4af37;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.product-info h3 {
+  margin: 8px 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.product-meta {
+  color: #b8b8b8;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER AND BRAND LOGO -->
+
+<header>
+  <nav class="navbar">
+
+    <a class="logo" href="#home" aria-label="ADA ZIONSTAR homepage">
+      <span class="logo-star">★</span>
+
+      <span>
+        <span class="logo-name">ADA <span>ZIONSTAR</span></span>
+        <span class="logo-caption">POWERING POSSIBILITIES</span>
+      </span>
+    </a>
+
+    
+<div class="nav-links">
+  <a href="#home">Home</a>
+  <a href="#categories">Categories</a>
+  <a href="#catalogue">Products</a>
+  <a href="#about">About</a>
+  <a href="#services">Our Services</a>
+  <a href="#contact" class="nav-cta">Contact Us</a>
+  <a href="#branches">Our Branches</a>
+</div>
+
+
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO / HOMEPAGE -->
+
+<section class="hero" id="home">
+
+  <div>
+    <p class="eyebrow">Quality • Reliability • Excellence</p>  
+<h1>
+  Powering<br>
+  Your World<br>
+  <span>With Excellence.</span>
+</h1>
+<p class="hero-description">
+  Discover quality electrical products and reliable electrical
+  services, from lighting and cables to installations and
+  electrical projects, with ADA ZIONSTAR.
+</p>
+<a href="#catalogue" class="primary-button">
+  EXPLORE PRODUCTS
+</a>
+
+<a href="#services" class="secondary-button">
+  OUR SERVICES
+</a>
+
+<a href="#categories" class="secondary-button">
+  OUR CATEGORIES
+</a>
+
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-emblem">
+      <span class="star">★</span>
+      <p>ADA ZIONSTAR</p>
+      <small>POWERING POSSIBILITIES</small>
+    </div>
+  </div>
+
+</section>
+
+<!-- PRODUCT CATEGORIES -->
+
+<section class="section categories-section" id="categories">
+
+  <div class="section-inner">
+
+    <div class="section-heading">
+      <p class="eyebrow">Explore Our Range</p>
+      <h2>Shop By <span>Category</span></h2>
+      <p>
+        Start with a product category, choose the product type,
+        and then explore the brands available.
+      </p>
+    </div>
+
+    <div class="category-grid" id="categoryGrid">
+
+      <button class="category-card" data-category="Lighting">
+        <span class="category-icon">💡</span>
+        <h3>Lighting</h3>
+        <p>Bulbs, downlights and floodlights</p>
+      </button>
+
+      <button class="category-card" data-category="Wiring Accessories">
+        <span class="category-icon">🔌</span>
+        <h3>Wiring Accessories</h3>
+        <p>Sockets, switches and plugs</p>
+      </button>
+
+      <button class="category-card" data-category="Cables & Wires">
+        <span class="category-icon">⚡</span>
+        <h3>Cables & Wires</h3>
+        <p>Electrical cables and wires</p>
+      </button>
+
+      <button class="category-card" data-category="Protection Equipment">
+        <span class="category-icon">🛡️</span>
+        <h3>Protection Equipment</h3>
+        <p>Breakers, cut-outs and stabilizers</p>
+      </button>
+
+      <button class="category-card" data-category="Solar Products">
+        <span class="category-icon">☀️</span>
+        <h3>Solar Products</h3>
+        <p>Solar fans and solar lighting</p>
+      </button>
+
+      <button class="category-card" data-category="Electrical Appliances">
+        <span class="category-icon">🌀</span>
+        <h3>Electrical Appliances</h3>
+        <p>Electric fans and blenders</p>
+      </button>
+
+      <button class="category-card" data-category="Security & Alarm Systems">
+        <span class="category-icon">🚨</span>
+        <h3>Security & Alarm Systems</h3>
+        <p>Alarm systems and accessories</p>
+      </button>
+
+      <button class="category-card" data-category="Electrical Accessories">
+        <span class="category-icon">🔧</span>
+        <h3>Electrical Accessories</h3>
+        <p>Connectors and other components</p>
+      </button>
+      
+<button class="category-card" data-category="Chandeliers">
+  <span class="category-icon">✨</span>
+  <h3>Chandeliers</h3>
+  <p>Decorative and ceiling chandeliers</p>
+</button>
+
+      
+
+      
+
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT CATALOGUE -->
+
+<section class="section catalogue-section" id="catalogue">
+
+  <div class="section-inner">
+
+    <div class="section-heading">
+      <p class="eyebrow">The Product Catalogue</p>
+      <h2>Find Your <span>Product</span></h2>
+      <p>
+        Select a category, choose a product type, and narrow
+        your results by brand.
+      </p>
+    </div>
+
+    <div class="catalogue-controls">
+
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Search for a product..."
+        aria-label="Search products"
+      >
+
+      <select id="typeFilter" aria-label="Filter by product type">
+        <option value="">All product types</option>
+      </select>
+      <select id="brandFilter" aria-label="Filter by brand">
+        <option value="">All brands</option>
+      </select>
+
+    </div>
+
+    <p class="catalogue-status" id="catalogueStatus">
+      Loading products...
+    </p>
+
+    <div class="product-grid" id="productGrid"></div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="section about-section" id="about">
+
+  <div class="section-inner about-grid">
+
+    <div class="about-panel">
+      <span class="star">★</span>
+      <h3>ADA ZIONSTAR</h3>
+<p>
+  Your trusted destination for electrical products,
+  installation and related electrical solutions.
+</p>
+
+    </div>
+
+    <div class="about-copy">
+      <p class="eyebrow">About Our Business</p>
+
+      <h2>Quality You Can <span>Count On.</span></h2>
+
+      
+<p>
+  ADA ZIONSTAR supplies electrical products and provides electrical
+  services to meet the needs of residential and commercial customers.
+  We help customers explore product options and discuss their
+  electrical requirements with our team.
+</p>
+
+<p>
+  Our product range includes lighting, cables, wiring accessories,
+  solar products and electrical appliances. We also provide electrical
+  installation and related services. Contact your preferred branch
+  to enquire about products, availability, prices and service requests.
+</p>
+
+      <a href="#catalogue" class="primary-button">
+        BROWSE CATALOGUE
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- OUR CENTRAL LOCATION -->
+
+<section class="section branches-section" id="branches">
+
+  <div class="section-inner">
+      <h2>Visit Our <span>Central Location</span></h2>
+      <p>
+        Visit ADA ZIONSTAR for quality electrical products,
+        product enquiries and professional electrical services.
+      </p>
+    </div>
+
+    <div class="category-grid">
+
+      <div class="category-card">
+        <span class="star">★</span>
+        <h3>ADA ZIONSTAR</h3>
+
+        <p>
+          KM 13, Lagos–Abeokuta Expressway, opposite Akebaje
+          Shopping Complex, Obada, Ogun State, 110104, Nigeria.
+        </p>
+
+        <p>
+          <strong>Phone:</strong>
+<a href="tel:+2347067778430">0706 777 8430</a>
+        </p>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=KM+13+Lagos-Abeokuta+Expressway+opposite+Akebaje+Shopping+Complex+Obada+Ogun+State+110104+Nigeria"
+          rel="noopener noreferrer"
+          class="primary-button">
+          GET DIRECTIONS
+        </a>
+        
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- OUR SERVICES -->
+
+<section class="section services-section" id="services">
+
+  <div class="section-inner">
+
+    <div class="section-heading">
+      <p class="eyebrow">What We Do</p>
+      <h2>Electrical Solutions <span>You Can Count On.</span></h2>
+      <p>
+        Beyond supplying quality electrical products, ADA ZIONSTAR
+        provides electrical services for homes, commercial buildings
+        and larger projects. Contact our team to discuss your needs.
+      </p>
+    </div>
+
+    <div class="category-grid">
+
+      <div class="category-card">
+        <span class="star">★</span>
+        <h3>Electrical Installation</h3>
+        <p>
+          Installation of lighting, electrical fittings and related
+          equipment.
+        </p>
+      </div>
+
+      <div class="category-card">
+        <span class="star">★</span>
+        <h3>Wiring & Fittings</h3>
+        <p>
+          Electrical wiring, sockets, switches and other electrical
+          fittings for suitable projects.
+        </p>
+      </div>
+
+      <div class="category-card">
+        <span class="star">★</span>
+        <h3>Repairs & Maintenance</h3>
+        <p>
+          Electrical fault checks, repairs and maintenance services.
+        </p>
+      </div>
+
+      <div class="category-card">
+        <span class="star">★</span>
+        <h3>Electrical Projects</h3>
+        <p>
+          Contact us to discuss electrical requirements for
+          residential and commercial projects.
+        </p>
+      </div>
+
+    </div>
+
+    <
+<div class="contact-box">
+  <h3>Need Professional Electrical Services?</h3>
+  <p>
+    From electrical installations to wiring and larger projects,
+    contact ADA ZIONSTAR to discuss your requirements and find
+    out how our team can help.
+  </p>
+  <a href="#contact" class="primary-button">
+    DISCUSS YOUR PROJECT
+  </a>
+
+  </div>
+
+</section><
+
+<!-- CONTACT -->
+
+<section class="section contact-section" id="contact">
+
+  
+<div class="contact-box">
+  <h3>How Can We Help You?</h3>
+
+  <p>
+    Looking for electrical products or professional electrical
+    services? Contact ADA ZIONSTAR to discuss your needs,
+    confirm product availability and prices, or request more information.
+  </p>
+
+
+
+  <a href="#catalogue" class="primary-button">
+    EXPLORE PRODUCTS
+  </a>
+
+  <a href="#services" class="secondary-button">
+    OUR ELECTRICAL SERVICES
+  </a>
+
+  <a
+    href="tel:+2348053785126"
+    class="secondary-button">
+    CALL ADA ZIONSTAR
+  </a>
+</div>
+
+
+    <div class="contact-box">
+      <h3>Let's Help You Find It.</h3>
+      <p>
+        Choose a product in our catalogue and use its enquiry button
+        to ask us about it.
+      </p>
+      
+<p>
+  <strong>Email:</strong>
+  <a href="mailto:zionstar37@gmail.com">zionstar37@gmail.com</a>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <a href="tel:+2347067778430">0706 777 8430</a>
+</p>
+
+
+
+      <a href="#catalogue" class="primary-button">
+        FIND A PRODUCT
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      ★ ADA <span>ZIONSTAR</span>
+    </div>
+
+    <p>
+      ZION STAR ELECTRICAL COMPANY
+    </p>
+
+    <p>
+      KM 13, Lagos–Abeokuta Expressway, Obada,
+      110104, Ogun State, Nigeria.
+    </p>
+
+    <p>
+      Phone / WhatsApp:
+      <a href="tel:+2347067778430">0706 777 8430</a>
+    </p>
+
+    <p>
+      Email:
+      <a href="mailto:zionstar37@gmail.com">
+        zionstar37@gmail.com
+      </a>
+    </p>
+
+    <p>
+      &copy; <span id="currentYear"></span>
+      ADA ZIONSTAR. All rights reserved.
+    </p>
+
+  </div>
+</footer>
+
+<script>
+
+/*
+  ADA ZIONSTAR PRODUCT CATALOGUE
+
+  These are sample entries for developing the website.
+  Replace them with verified products from the business stock list.
+*/
+
+const products = [
+  {
+     name: "LED Light Bulb",
+  category: "Lighting",
+  type: "LED Bulb",
+  brand: "AKT",
+  specification: "Confirm wattage and model",
+  icon: "💡",
+  image: "images/led-bulb.jpg"
+
+  },
+  {
+    name: "LED Light Bulb",
+  category: "Lighting",
+  type: "LED Bulb",
+  brand: "GOODCOM",
+  specification: "Confirm wattage and model",
+  icon: "💡",
+  image: "images/led-bulb.jpg"
+  },
+  {
+    name: "LED Downlight",
+    category: "Lighting",
+    type: "Downlight",
+    brand: "Other Brands",
+    specification: "Confirm wattage and model",
+    icon: "🔆",
+    image: "images/led-downlight.jpg"
+  },
+  {
+    name: "LED Floodlight",
+    category: "Lighting",
+    type: "Floodlight",
+    brand: "Other Brands",
+    specification: "Confirm wattage and model",
+    icon: "🔦",
+    image: "images/led-floodlight.jpg"
+  },
+  {
+    name: "Electrical Socket",
+    category: "Wiring Accessories",
+    type: "Socket",
+    brand: "Other Brands",
+    specification: "Confirm model and rating",
+    icon: "🔌",
+    image: "images/electrical-socket.jpg"
+  },
+  {
+    name: "Electrical Switch",
+    category: "Wiring Accessories",
+    type: "Switch",
+    brand: "Other Brands",
+    specification: "Confirm model",
+    icon: "🎚️",
+    image: "images/electrical-switch.jpg"
+  },
+  {
+    name: "Electrical Cable",
+    category: "Cables & Wires",
+    type: "Cable",
+    brand: "Other Brands",
+    specification: "Confirm cable size and type",
+    icon: "〰️",
+    image: "images/electrical-cable.jpg"
+  },
+  {
+    name: "Circuit Breaker",
+    category: "Protection Equipment",
+    type: "Circuit Breaker",
+    brand: "Other Brands",
+    specification: "Confirm rating and model",
+    icon: "🛡️",
+    image: "images/circuit-breaker.jpg"
+  },
+  {
+    name: "Voltage Stabilizer",
+    category: "Protection Equipment",
+    type: "Stabilizer",
+    brand: "Other Brands",
+    specification: "Confirm capacity and model",
+    icon: "🔋",
+    image: "images/voltage-stabilizer.jpg"
+  },
+  {
+    name: "Solar Fan",
+    category: "Solar Products",
+    type: "Fan",
+    brand: "Other Brands",
+    specification: "Confirm model and features",
+    icon: "☀️",
+    image: "images/solar-fan.jpg"
+  },
+  {
+    name: "Solar Light",
+    category: "Solar Products",
+    type: "Solar Light",
+    brand: "Other Brands",
+    specification: "Confirm model",
+    icon: "🌞",
+    image: "images/solar-light.jpg"
+  },
+  {
+    name: "Electric Fan",
+    category: "Electrical Appliances",
+    type: "Fan",
+    brand: "Other Brands",
+    specification: "Confirm model and size",
+    icon: "🌀",
+    image: "images/electric-fan.jpg"
+  },
+  {
+    name: "Blender",
+    category: "Electrical Appliances",
+    type: "Blender",
+    brand: "Other Brands",
+    specification: "Confirm model and capacity",
+    icon: "🥤",
+    image: "images/blender.jpg"
+  },
+  {
+    name: "Alarm System",
+    category: "Security & Alarm Systems",
+    type: "Alarm",
+    brand: "Other Brands",
+    specification: "Confirm model and features",
+    icon: "🚨",
+    image: "images/alarm-system.jpg"
+  },
+  {
+    name: "Electrical Connector",
+    category: "Electrical Accessories",
+    type: "Connector",
+    brand: "Other Brands",
+    specification: "Confirm type and size",
+    icon: "🔧",
+    image: "images/electrical-connector.jpg"
+  },
+  
+  {
+    name: "Chandelier",
+    category: "Chandeliers",
+    type: "Chandelier",
+    brand: "Other Brands",
+    specification: "Confirm model, size and design",
+    icon: "✨",
+    image: "images/chandelier.jpg"
+  }
+
+];
+
+/*
+  Add the official business WhatsApp number here later.
+  Use country code and digits only, without + or spaces.
+  Example format: 2348012345678
+*/
+
+
+const WHATSAPP_NUMBER = "2347067778430";
+
+const productGrid = document.getElementById("productGrid");
+const searchInput = document.getElementById("searchInput");
+const typeFilter = document.getElementById("typeFilter");
+const brandFilter = document.getElementById("brandFilter");
+const catalogueStatus = document.getElementById("catalogueStatus");
+
+let selectedCategory = "";
+
+/* Populate a dropdown without duplicates. */
+
+function populateDropdown(selectElement, values, defaultLabel) {
+  selectElement.innerHTML = "";
+
+  const defaultOption = document.createElement("option");
+  defaultOption.value = "";
+  defaultOption.textContent = defaultLabel;
+
+  selectElement.appendChild(defaultOption);
+
+  values.forEach(value => {
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = value;
+    selectElement.appendChild(option);
+  });
+}
+
+/* Update product type and brand choices. */
+
+function updateFilters() {
+  const relevantProducts = products.filter(product => {
+    return !selectedCategory || product.category === selectedCategory;
+  });
+
+  const types = [...new Set(
+    relevantProducts.map(product => product.type)
+  )].sort();
+
+  const brands = [...new Set(
+    relevantProducts.map(product => product.brand)
+  )].sort();
+
+  const previousType = typeFilter.value;
+  const previousBrand = brandFilter.value;
+
+  populateDropdown(typeFilter, types, "All product types");
+  populateDropdown(brandFilter, brands, "All brands");
+
+  if (types.includes(previousType)) {
+    typeFilter.value = previousType;
+  }
+
+  if (brands.includes(previousBrand)) {
+    brandFilter.value = previousBrand;
+  }
+}
+
+/* Create a product enquiry. */
+
+function enquireAboutProduct(product) {
+  const message =
+    `Hello ADA ZIONSTAR, I would like to enquire about: ` +
+    `${product.name}, Brand: ${product.brand}. ` +
+    `Please confirm the price and availability.`;
+
+  if (!WHATSAPP_NUMBER) {
+    alert(
+      "The product catalogue is working!\n\n" +
+      "To activate WhatsApp enquiries, add the official " +
+      "business WhatsApp number to the WHATSAPP_NUMBER setting " +
+      "in the JavaScript section of index.html."
+    );
+
+    return;
+  }
+
+  const url =
+    "https://wa.me/" +
+    WHATSAPP_NUMBER +
+    "?text=" +
+    encodeURIComponent(message);
+
+  window.open(url, "_blank", "noopener,noreferrer");
+}
+
+/* Display the products matching the selected filters. */
+
+function renderProducts() {
+  const searchTerm = searchInput.value.trim().toLowerCase();
+  const selectedType = typeFilter.value;
+  const selectedBrand = brandFilter.value;
+
+  const filteredProducts = products.filter(product => {
+    const searchableText = [
+      product.name,
+      product.category,
+      product.type,
+      product.brand,
+      product.specification
+    ].join(" ").toLowerCase();
+
+    const matchesSearch = searchableText.includes(searchTerm);
+
+    const matchesCategory =
+      !selectedCategory || product.category === selectedCategory;
+
+    const matchesType =
+      !selectedType || product.type === selectedType;
+
+    const matchesBrand =
+      !selectedBrand || product.brand === selectedBrand;
+
+    return (
+      matchesSearch &&
+      matchesCategory &&
+      matchesType &&
+      matchesBrand
+    );
+  });
+
+  productGrid.innerHTML = "";
+
+  catalogueStatus.textContent =
+    `${filteredProducts.length} product(s) found`;
+
+  if (filteredProducts.length === 0) {
+    productGrid.innerHTML = `
+      <div class="empty-state">
+        <h3>No matching products found.</h3>
+        <p>Try another search or change your filters.</p>
+      </div>
+    `;
+
+    return;
+  }
+
+  filteredProducts.forEach(product => {
+    const card = document.createElement("article");
+    card.className = "product-card";
+
+   
+const artwork = document.createElement("div");
+artwork.className = "product-art";
+
+if (product.image) {
+  const image = document.createElement("img");
+  image.src = product.image;
+  image.alt = product.name;
+  image.className = "product-image";
+
+  image.onerror = function () {
+    image.style.display = "none";
+
+    const fallback = document.createElement("span");
+    fallback.className = "product-symbol";
+    fallback.textContent = product.icon || "💡";
+
+    artwork.prepend(fallback);
+  };
+
+  artwork.appendChild(image);
+} else {
+  const symbol = document.createElement("span");
+  symbol.className = "product-symbol";
+  symbol.textContent = product.icon || "💡";
+  artwork.appendChild(symbol);
+}
+
+
+    const info = document.createElement("div");
+    info.className = "product-info";
+
+    const category = document.createElement("p");
+    category.className = "product-category";
+    category.textContent = product.category;
+
+    const title = document.createElement("h3");
+    title.textContent = product.name;
+
+    const meta = document.createElement("p");
+    meta.className = "product-meta";
+    meta.textContent =
+      `Brand: ${product.brand} · ${product.specification}`;
+
+    const button = document.createElement("button");
+    button.className = "enquiry-button";
+    button.type = "button";
+    button.textContent = "ENQUIRE ABOUT PRODUCT";
+
+    button.addEventListener("click", () => {
+      enquireAboutProduct(product);
+    });
+
+    info.append(category, title, meta, button);
+    card.append(artwork, info);
+    productGrid.appendChild(card);
+  });
+}
+
+/* Category selection. */
+
+document.querySelectorAll(".category-card").forEach(button => {
+  button.addEventListener("click", () => {
+    selectedCategory = button.dataset.category;
+
+    document.querySelectorAll(".category-card").forEach(card => {
+      card.classList.toggle("active", card === button);
+    });
+
+    updateFilters();
+
+    document.getElementById("catalogue").scrollIntoView({
+      behavior: "smooth"
+    });
+
+    renderProducts();
+  });
+});
+
+/* Update results whenever a filter changes. */
+
+searchInput.addEventListener("input", renderProducts);
+
+typeFilter.addEventListener("change", renderProducts);
+
+brandFilter.addEventListener("change", renderProducts);
+
+/* Initialise the page. */
+
+document.getElementById("currentYear").textContent =
+  new Date().getFullYear();
+
+updateFilters();
+renderProducts();
+
+</script>
+
+</body>
+</html>
