@@ -16,7 +16,7 @@
   --gold-light: #f3dc8a;
   --white: #ffffff;
   --grey: #b8b8b8;
-  --border: rgba(212, 175, 55, 0.25);
+  --border: rgba(212, 175, 55, 0.25);f
 }
 
 * {
@@ -923,10 +923,75 @@ footer p {
 .hero-visual:has(.hero-image)::after {
   display: none;
 }
+  
+/* MOBILE NAVIGATION IMPROVEMENT */
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid #9A7410;
+  color: #111111;
+  font-size: 27px;
+  width: 46px;
+  height: 42px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+
+  .navbar {
+    position: relative;
+    flex-wrap: wrap;
+    padding: 12px 16px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px 16px 16px;
+    background: #D1D1D1;
+    border-bottom: 2px solid #D4AF37;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.12);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 12px 8px;
+    font-size: 15px !important;
+    border-bottom: 1px solid rgba(0,0,0,0.10);
+  }
+
+  .nav-links .nav-cta {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 10px;
+    padding: 10px 16px;
+  }
+}
+
 </style>
 </head>
 
 <body>
+
+<!-- HEADER AND BRAND LOGO -->
+
 
 <!-- HEADER AND BRAND LOGO -->
 
@@ -935,24 +1000,27 @@ footer p {
 
     <a class="logo" href="#home" aria-label="ADA ZIONSTAR homepage">
       <span class="logo-star">★</span>
-
       <span>
         <span class="logo-name">ADA <span>ZIONSTAR</span></span>
         <span class="logo-caption">POWERING POSSIBILITIES</span>
       </span>
     </a>
 
-    
-<div class="nav-links">
-  <a href="#home">Home</a>
-  <a href="#categories">Categories</a>
-  <a href="#catalogue">Products</a>
-  <a href="#about">About</a>
-  <a href="#services">Our Services</a>
-  <a href="#contact" class="nav-cta">Contact Us</a>
-  <a href="#branches">Our Branches</a>
-</div>
+    <button class="menu-toggle" id="menuToggle"
+      type="button" aria-label="Open navigation menu"
+      aria-expanded="false">
+      ☰
+    </button>
 
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#catalogue">Products</a>
+      <a href="#about">About</a>
+      <a href="#services">Our Services</a>
+      <a href="#contact" class="nav-cta">Contact Us</a>
+      <a href="#branches">Our Branches</a>
+    </div>
 
   </nav>
 </header>
@@ -1766,6 +1834,24 @@ document.querySelectorAll(".category-card").forEach(button => {
     });
 
     renderProducts();
+    
+/* MOBILE MENU */
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+
+  menuToggle.textContent = isOpen ? "✕" : "☰";
+  menuToggle.setAttribute("aria-expanded", isOpen);
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle.textContent = "☰";
+    menuToggle.setAttribute("aria-expanded", "false");
   });
 });
 
