@@ -1835,6 +1835,26 @@ document.querySelectorAll(".category-card").forEach(button => {
 
     renderProducts();
     
+
+  });
+});
+
+/* Update results whenever a filter changes. */
+
+searchInput.addEventListener("input", renderProducts);
+
+typeFilter.addEventListener("change", renderProducts);
+
+brandFilter.addEventListener("change", renderProducts);
+
+/* Initialise the page. */
+
+document.getElementById("currentYear").textContent =
+  new Date().getFullYear();
+
+updateFilters();
+renderProducts();
+
 /* MOBILE MENU */
 
 const menuToggle = document.getElementById("menuToggle");
@@ -1854,22 +1874,6 @@ navLinks.querySelectorAll("a").forEach(link => {
     menuToggle.setAttribute("aria-expanded", "false");
   });
 });
-
-/* Update results whenever a filter changes. */
-
-searchInput.addEventListener("input", renderProducts);
-
-typeFilter.addEventListener("change", renderProducts);
-
-brandFilter.addEventListener("change", renderProducts);
-
-/* Initialise the page. */
-
-document.getElementById("currentYear").textContent =
-  new Date().getFullYear();
-
-updateFilters();
-renderProducts();
 
 </script>
 
